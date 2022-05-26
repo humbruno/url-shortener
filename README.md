@@ -35,7 +35,7 @@ Dependencies used for this project:
 
 ## 🔌 Live Website Link
 
-- [TBC](https://jobs.brunosantos.dev/)
+- [Live Website](https://url.brunosantos.dev/)
 
 ## 📥 Installing and executing
 
