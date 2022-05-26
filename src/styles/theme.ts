@@ -1,11 +1,17 @@
 import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
-  borderRadius: '5px',
-
   colors: {
-    main: 'cyan',
-    secondary: 'magenta',
+    primary: 'hsl(180, 66%, 49%)',
+    secondary: 'hsl(257, 27%, 26%)',
+    error: 'hsl(0, 87%, 67%)',
+
+    neutral: {
+      gray: 'hsl(0, 0%, 75%)',
+      violet: 'hsl(257, 7%, 63%)',
+      darkBlue: 'hsl(255, 11%, 22%)',
+      darkViolet: 'hsl(260, 8%, 14%)',
+    },
   },
 };
 
