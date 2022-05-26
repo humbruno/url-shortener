@@ -24,7 +24,7 @@
 
 ## 💻 Project
 
-Job listing landing page with filtering option.
+URL shortener interface
 
 Dependencies used for this project:
 
@@ -42,11 +42,13 @@ Dependencies used for this project:
 Clone this repository and access the directory.
 
 ```bash
-# Instaling dependencies
+# Installing dependencies
 $ npm install
+---- or
 $ yarn
 
 # Executing the application
 $ npm run dev
+---- or
 $ yarn dev
 ```
