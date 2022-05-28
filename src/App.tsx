@@ -9,9 +9,7 @@ const App = () => (
   <>
     <GlobalStyles />
     <ThemeProvider theme={theme}>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>
         <Hero />
       </main>

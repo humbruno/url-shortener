@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-const Nav = styled.nav`
+export const Header = styled.header`
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 45px;
+
+  position: relative;
 
   img {
     width: 120px;
@@ -13,10 +17,48 @@ const Nav = styled.nav`
     }
   }
 
-  span {
+  .menu {
     display: flex;
-    align-items: center;
-    gap: 45px;
+    flex-direction: column;
+    gap: 6px;
+    background-color: transparent;
+    border: none;
+
+    @media (min-width: 769px) {
+      display: none;
+    }
+
+    span {
+      width: 24px;
+      height: 3px;
+      background-color: ${({ theme }) => theme.colors.neutral.violet};
+    }
+  }
+`;
+
+export const Nav = styled.nav<{ active: boolean }>`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(100% + 23px);
+    transform: ${({ active }) =>
+      active ? 'translateX(0)' : 'translateX(150%)'};
+    z-index: 999;
+
+    background-color: ${({ theme }) => theme.colors.secondary};
+
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 10px;
+    padding: 40px 24px;
+
+    transition: transform 150ms ease-in-out;
   }
 
   ul {
@@ -25,6 +67,19 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        max-width: 280px;
+
+        @media (max-width: 768px) {
+          font-size: 1.125rem;
+        }
+      }
+    }
   }
 
   li {
@@ -34,11 +89,30 @@ const Nav = styled.nav`
 
     transition: color 150ms ease-in-out;
 
-    &:hover {
-      cursor: pointer;
-      color: ${({ theme }) => theme.colors.neutral.darkBlue};
+    @media (min-width: 769px) {
+      &:hover {
+        cursor: pointer;
+        color: ${({ theme }) => theme.colors.neutral.darkBlue};
+      }
+    }
+
+    @media (max-width: 768px) {
+      color: #fff;
+      font-size: 1.125rem;
+    }
+  }
+
+  .divider {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: ${({ theme }) => theme.colors.neutral.violet};
+
+      margin: 30px 0;
     }
   }
 `;
-
-export default Nav;

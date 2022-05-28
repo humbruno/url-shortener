@@ -17,9 +17,17 @@ const StyledButton = styled.button<StyledButtonProps>`
 
   transition: filter 150ms ease-in-out;
 
-  &:hover {
-    cursor: pointer;
-    filter: opacity(0.7);
+  @media (max-width: 768px) {
+    &:active {
+      filter: opacity(0.7);
+    }
+  }
+
+  @media (min-width: 769px) {
+    &:hover {
+      cursor: pointer;
+      filter: opacity(0.7);
+    }
   }
 `;
 
