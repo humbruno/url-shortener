@@ -43,12 +43,8 @@ Clone this repository and access the directory.
 
 ```bash
 # Installing dependencies
-$ npm install
----- or
 $ yarn
 
 # Executing the application
-$ npm run dev
----- or
 $ yarn dev
 ```

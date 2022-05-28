@@ -2,11 +2,19 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/global';
 import theme from './styles/theme';
 
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+
 const App = () => (
   <>
     <GlobalStyles />
     <ThemeProvider theme={theme}>
-      <h1>URL Shortener</h1>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+      </main>
     </ThemeProvider>
   </>
 );
