@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
 
         @media (max-width: 768px) {
             padding: 40px 24px 56px;
+            overflow: hidden;
         }
     }
 
