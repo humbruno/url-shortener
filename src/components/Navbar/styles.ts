@@ -48,7 +48,7 @@ export const Nav = styled.nav<{ active: boolean }>`
     position: absolute;
     z-index: 999;
     top: calc(100% + 23px);
-    left: ${({ active }) => (active ? '0' : '-110%')};
+    right: ${({ active }) => (active ? '0' : '-110%')};
 
     background-color: ${({ theme }) => theme.colors.secondary};
 
@@ -71,10 +71,7 @@ export const Nav = styled.nav<{ active: boolean }>`
       button {
         width: 100%;
         max-width: 280px;
-
-        @media (max-width: 768px) {
-          font-size: 1.125rem;
-        }
+        font-size: 1.25rem;
       }
     }
   }

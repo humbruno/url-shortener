@@ -10,13 +10,7 @@ const GlobalStyles = createGlobalStyle`
     
     body {
         font-family: 'Poppins', sans-serif;
-        padding: 48px 165px 72px;
         min-height: 100vh;
-        overflow: hidden;
-
-        @media (max-width: 768px) {
-            padding: 40px 24px 56px;
-        }
     }
 
     button {
