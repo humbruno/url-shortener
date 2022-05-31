@@ -42,23 +42,20 @@ export const Nav = styled.nav<{ active: boolean }>`
   justify-content: space-between;
 
   @media (max-width: 768px) {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: calc(100% + 23px);
-    transform: ${({ active }) =>
-      active ? 'translateX(0)' : 'translateX(150%)'};
-    z-index: 999;
-
-    background-color: ${({ theme }) => theme.colors.secondary};
-
     flex-direction: column;
     justify-content: center;
+
+    position: absolute;
+    z-index: 999;
+    top: calc(100% + 23px);
+    left: ${({ active }) => (active ? '0' : '-110%')};
+
+    background-color: ${({ theme }) => theme.colors.secondary};
 
     border-radius: 10px;
     padding: 40px 24px;
 
-    transition: transform 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
   }
 
   ul {

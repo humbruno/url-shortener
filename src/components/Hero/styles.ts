@@ -63,13 +63,14 @@ const HeroSection = styled.section`
     @media (max-width: 768px) {
       order: 1;
       width: 100%;
+      text-align: center;
+      overflow-x: visible;
     }
 
     img {
       max-width: 658px;
 
       @media (max-width: 768px) {
-        transform: translateX(5%);
         max-width: 460px;
       }
     }
