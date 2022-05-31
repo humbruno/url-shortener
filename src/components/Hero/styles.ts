@@ -5,7 +5,7 @@ const HeroSection = styled.section`
   align-items: center;
   gap: 100px;
 
-  margin-top: 78px;
+  padding-bottom: 96px;
 
   @media (max-width: 768px) {
     flex-direction: column;

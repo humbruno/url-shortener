@@ -4,18 +4,17 @@ import theme from './styles/theme';
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Container from './components/Container';
+import Body from './components/Body';
 
 const App = () => (
   <>
     <GlobalStyles />
     <ThemeProvider theme={theme}>
-      <Container>
-        <Navbar />
-        <main>
-          <Hero />
-        </main>
-      </Container>
+      <Navbar />
+      <main>
+        <Hero />
+        <Body />
+      </main>
     </ThemeProvider>
   </>
 );

@@ -26,7 +26,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   @media (min-width: 769px) {
     &:hover {
       cursor: pointer;
-      filter: opacity(0.7);
+      filter: brightness(1.07);
     }
   }
 `;

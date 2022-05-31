@@ -7,6 +7,7 @@ const theme: DefaultTheme = {
     error: 'hsl(0, 87%, 67%)',
 
     neutral: {
+      lightGray: 'hsl(225, 33%, 95%)',
       gray: 'hsl(0, 0%, 75%)',
       violet: 'hsl(257, 7%, 63%)',
       darkBlue: 'hsl(255, 11%, 22%)',

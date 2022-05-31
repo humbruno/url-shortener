@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
         min-height: 100vh;
     }
 
-    button {
+    button, input {
         font-family: inherit;
     }
 `;

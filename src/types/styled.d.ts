@@ -8,6 +8,7 @@ declare module 'styled-components' {
       error: string;
 
       neutral: {
+        lightGray: string;
         gray: string;
         violet: string;
         darkBlue: string;
