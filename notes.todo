@@ -1,3 +1,4 @@
 - remove min-height from body in global styles
 - refactor button component to take an input type as prop
 - refactor the shortened link inside SearchItem to a link tag
+- test commit
