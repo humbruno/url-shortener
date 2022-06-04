@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledList = styled.ul`
   list-style: none;
-  margin-top: 64px;
+  margin-top: 70px;
 
   display: flex;
   flex-direction: column;
